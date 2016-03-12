@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body ng-app="app" ng-controller="MainController as vm">
+    <div class="container">
+        <h1>{{vm.title}}</h1>
+        <button ng-click="vm.getSongs()">Get Songs</button>
+        
+        <table>
+		  <tr ng-repeat="song in vm.songs">
+		  	<td>{{ $index }}</td>
+		    <td>{{ song.artist }}</td>
+		    <td>{{ song.title }}</td>
+		  </tr>
+		</table>
+    </div>
+</body>
+<script src="assets/angular/angular.js"></script>
+<script src="assets/angular-resource/angular-resource.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/pandora.controller.js"></script>
+</html>
