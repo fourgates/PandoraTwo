@@ -6,7 +6,7 @@ import javax.crypto.spec.SecretKeySpec;
 /**
  * http://stackoverflow.com/questions/15948662/decrypting-in-java-with-blowfish
  * */
-public class EncryptionPOC {
+public class EncryptPOC {
 	public static void main(String[] args) throws Exception {
 		// Hex-encoded, encrypted server time. Decrypt with password from Partner passwords and skip first four bytes of garbage.
 	    String syncTime = "d0ce85362801eb4a574e6d787c6b9050";
